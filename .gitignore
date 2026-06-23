@@ -8,3 +8,7 @@ __pycache__/
 appsettings.Development.json
 bin/
 obj/
+
+
+node_modules/
+vite.config.ts

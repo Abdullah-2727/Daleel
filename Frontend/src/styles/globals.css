@@ -1,0 +1,685 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 14px;
+  
+  /* Cool Dark Theme - Professional Egyptian Gateway */
+  --background: #F8F9FA;
+  --foreground: #11212D;
+  --card: #FFFFFF;
+  --card-foreground: #11212D;
+  --popover: #FFFFFF;
+  --popover-foreground: #11212D;
+  --primary: #B01E28;
+  --primary-foreground: #FFFFFF;
+  --secondary: #CCD0CF;
+  --secondary-foreground: #11212D;
+  --muted: #F1F3F4;
+  --muted-foreground: #4A5C6A;
+  --accent: #E5B80B;
+  --accent-foreground: #06141B;
+  --destructive: #B01E28;
+  --destructive-foreground: #FFFFFF;
+  --border: #CCD0CF;
+  --input: #FFFFFF;
+  --input-background: #FFFFFF;
+  --switch-background: #CCD0CF;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #B01E28;
+  --chart-1: #B01E28;
+  --chart-2: #E5B80B;
+  --chart-3: #253745;
+  --chart-4: #4A5C6A;
+  --chart-5: #9BA8AB;
+  --radius: 0.75rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #4A5C6A;
+  --sidebar-primary: #B01E28;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F8F9FA;
+  --sidebar-accent-foreground: #B01E28;
+  --sidebar-border: #CCD0CF;
+  --sidebar-ring: #B01E28;
+  
+  /* Modern Design System Variables */
+  --gradient-primary: linear-gradient(135deg, #B01E28 0%, #8B1721 100%);
+  --gradient-secondary: linear-gradient(135deg, #E5B80B 0%, #C9A009 100%);
+  --gradient-accent: linear-gradient(135deg, #253745 0%, #4A5C6A 100%);
+  --gradient-soft: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
+  --shadow-soft: 0 1px 3px rgba(6, 20, 27, 0.08);
+  --shadow-medium: 0 4px 12px rgba(6, 20, 27, 0.12);
+  --shadow-strong: 0 10px 30px rgba(6, 20, 27, 0.18);
+  --shadow-card: 0 2px 8px rgba(6, 20, 27, 0.06);
+  
+  /* Egyptian National Colors - Dalel Brand (Cool Dark Palette) */
+  --egypt-red: #B01E28;
+  --egypt-red-dark: #8B1721;
+  --egypt-gold: #E5B80B;
+  --egypt-gold-dark: #C9A009;
+  --egypt-dark-1: #06141B;
+  --egypt-dark-2: #11212D;
+  --egypt-dark-3: #253745;
+  --egypt-dark-4: #4A5C6A;
+  --egypt-light-1: #9BA8AB;
+  --egypt-light-2: #CCD0CF;
+  --egypt-white: #FFFFFF;
+  --egypt-background: #F8F9FA;
+  --egypt-text-primary: #11212D;
+  --egypt-text-secondary: #4A5C6A;
+  --egypt-success: #10B981;
+  --egypt-warning: #E5B80B;
+  --egypt-danger: #B01E28;
+  --egypt-shadow: rgba(6, 20, 27, 0.12);
+  --gradient-egypt: linear-gradient(135deg, #B01E28 0%, #8B1721 100%);
+  --gradient-egypt-gold: linear-gradient(135deg, #E5B80B 0%, #C9A009 100%);
+  --gradient-egypt-dark: linear-gradient(135deg, #06141B 0%, #11212D 50%, #253745 100%);
+  --gradient-hero: linear-gradient(135deg, #F8F9FA 0%, #CCD0CF 100%);
+}
+
+.dark {
+  --background: #06141B;
+  --foreground: #CCD0CF;
+  --card: #11212D;
+  --card-foreground: #CCD0CF;
+  --popover: #11212D;
+  --popover-foreground: #CCD0CF;
+  --primary: #B01E28;
+  --primary-foreground: #FFFFFF;
+  --secondary: #253745;
+  --secondary-foreground: #CCD0CF;
+  --muted: #11212D;
+  --muted-foreground: #9BA8AB;
+  --accent: #E5B80B;
+  --accent-foreground: #06141B;
+  --destructive: #B01E28;
+  --destructive-foreground: #CCD0CF;
+  --border: #253745;
+  --input: #11212D;
+  --ring: #B01E28;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #B01E28;
+  --chart-2: #E5B80B;
+  --chart-3: #4A5C6A;
+  --chart-4: #9BA8AB;
+  --chart-5: #CCD0CF;
+  --sidebar: #11212D;
+  --sidebar-foreground: #9BA8AB;
+  --sidebar-primary: #B01E28;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #253745;
+  --sidebar-accent-foreground: #E5B80B;
+  --sidebar-border: #253745;
+  --sidebar-ring: #B01E28;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    outline-color: var(--ring);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+  
+  /* Arabic/RTL Typography */
+  body[dir="rtl"],
+  .rtl,
+  [lang="ar"] {
+    font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Modern Card Styles */
+  .modern-card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+  }
+  
+  .modern-card:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+  }
+  
+  .stat-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  /* Solid card styles - no transparency */
+  .glass,
+  .glass-card,
+  .glass-modal,
+  .glass-strong {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+  }
+  
+  /* Modern shadows */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Gradients */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+  
+  /* Modern Blue Gradient */
+  .gradient-blue {
+    background: linear-gradient(135deg, #2F6FED 0%, #1E4FCD 100%);
+  }
+  
+  .gradient-blue-light {
+    background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px #93C5FD;
+    }
+    50% { 
+      box-shadow: 0 0 40px #60A5FA;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slow-zoom {
+    0%, 100% { 
+      transform: scale(1);
+    }
+    50% { 
+      transform: scale(1.05);
+    }
+  }
+  
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+  }
+  
+  .animate-slow-zoom {
+    animation: slow-zoom 20s ease-in-out infinite;
+  }
+  
+  /* Smooth transitions */
+  .duration-200 {
+    transition-duration: 200ms;
+  }
+  
+  .duration-300 {
+    transition-duration: 300ms;
+  }
+  
+  .duration-400 {
+    transition-duration: 400ms;
+  }
+  
+  .duration-2000 {
+    transition-duration: 2000ms;
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .hover-scale {
+    transition: transform 0.2s ease;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Arabic/Islamic Font Styling - Modern Cairo */
+  .font-arabic,
+  .font-arabic-modern {
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: -0.01em;
+  }
+  
+  /* Button Styles */
+  .btn-primary-modern {
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: var(--radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary-modern:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+  }
+  
+  /* Dalel Theme - Egyptian Colors */
+  .btn-primary-egypt {
+    background: var(--egypt-blue);
+    color: white;
+    border-radius: var(--radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .btn-primary-egypt:hover {
+    background: var(--egypt-blue-dark);
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+  }
+  
+  .btn-accent-egypt {
+    background: var(--egypt-gold);
+    color: var(--egypt-blue);
+    border-radius: var(--radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .btn-accent-egypt:hover {
+    background: var(--egypt-gold-dark);
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+  }
+  
+  /* Card Hover Effects */
+  .card-hover-lift {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+  }
+  
+  /* Sidebar Styles */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    color: var(--sidebar-foreground);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .sidebar-item:hover {
+    background: var(--sidebar-accent);
+    color: var(--sidebar-accent-foreground);
+  }
+  
+  .sidebar-item.active {
+    background: var(--sidebar-primary);
+    color: var(--sidebar-primary-foreground);
+  }
+  
+  /* Badge Styles */
+  .badge-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+  
+  .badge-success {
+    background: #D1FAE5;
+    color: #10B981;
+  }
+  
+  .badge-warning {
+    background: #FEF3C7;
+    color: #F59E0B;
+  }
+  
+  .badge-danger {
+    background: #FEE2E2;
+    color: #EF4444;
+  }
+  
+  .badge-info {
+    background: #DBEAFE;
+    color: #2F6FED;
+  }
+  
+  /* Icon Container Styles */
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius);
+    background: var(--accent);
+  }
+  
+  .icon-container-primary {
+    background: #DBEAFE;
+    color: #2F6FED;
+  }
+  
+  .icon-container-success {
+    background: #D1FAE5;
+    color: #10B981;
+  }
+  
+  .icon-container-warning {
+    background: #FEF3C7;
+    color: #F59E0B;
+  }
+  
+  .icon-container-danger {
+    background: #FEE2E2;
+    color: #EF4444;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+  
+  /* Gradient Text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Dividers */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 1.5rem 0;
+  }
+  
+  /* Status Indicators */
+  .status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+  }
+  
+  .status-dot-success {
+    background: #10B981;
+  }
+  
+  .status-dot-warning {
+    background: #F59E0B;
+  }
+  
+  .status-dot-danger {
+    background: #EF4444;
+  }
+  
+  /* Input Styles */
+  .input-modern {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .input-modern:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px #DBEAFE;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--muted);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--muted-foreground);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+  
+  /* Background Patterns */
+  .bg-pattern-dots {
+    background-image: radial-gradient(circle, #E0E7FF 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .bg-pattern-grid {
+    background-image: 
+      linear-gradient(#F0F4FF 1px, transparent 1px),
+      linear-gradient(90deg, #F0F4FF 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+}
+
+/**
+ * Base typography
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--foreground);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--foreground);
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--foreground);
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--foreground);
+    }
+
+    p {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--muted-foreground);
+    }
+
+    label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--foreground);
+    }
+
+    button {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
