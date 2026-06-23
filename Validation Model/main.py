@@ -1,0 +1,32 @@
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from routers import health, ocr
+from services.ocr_service import get_model
+from config import settings
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+   
+    yield
+
+
+app = FastAPI(
+    title="Daleel Egyptian ID OCR API",
+    description="Extracts and validates fields from Egyptian National ID cards.",
+    version="1.1.0",
+    lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(health.router, prefix="")
+app.include_router(ocr.router,    prefix="")
