@@ -12,3 +12,6 @@ obj/
 
 node_modules/
 vite.config.ts
+
+
+*.drawio
