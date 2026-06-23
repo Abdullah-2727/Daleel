@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/CoreLayer/">
+    <Project Path="Daleel.Domain/Daleel.Domain.csproj" Id="1af35464-73fb-44a0-9eb7-d292daf59de4" />
+    <Project Path="Daleel.Services.Abstraction/Daleel.Services.Abstraction.csproj" Id="73151181-ed8a-4b1a-b2e5-76c0604b3b4c" />
+    <Project Path="Daleel.Services/Daleel.Services.csproj" Id="66c5d5e1-8cb5-4b95-bf1c-4508070c40b0" />
+  </Folder>
+  <Folder Name="/InfrastructureLayer/">
+    <Project Path="Daleel.Persistence/Daleel.Persistence.csproj" Id="55829435-1d5a-4f4f-b7c0-694c57640f81" />
+  </Folder>
+  <Folder Name="/PresentationLayer/">
+    <Project Path="Daleel.API/Daleel.API.csproj" Id="d5785a43-bf8e-45f7-91c6-3f9faff4bed3" />
+    <Project Path="Daleel.Presentation/Daleel.Presentation.csproj" Id="052cff57-83e4-45bd-96f7-597ff6c9c402" />
+  </Folder>
+  <Project Path="Daleel.Shared/Daleel.Shared.csproj" Id="408aa4fe-05b0-4651-b308-ae495d50ba48" />
+</Solution>

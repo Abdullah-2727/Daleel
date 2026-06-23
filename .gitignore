@@ -1,3 +1,10 @@
 venv/
 .env
 __pycache__/
+
+
+.vs/
+*.user
+appsettings.Development.json
+bin/
+obj/

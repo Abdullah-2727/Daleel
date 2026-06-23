@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="ُEmailService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="16.1.1" />
+		<PackageReference Include="CloudinaryDotNet" Version="1.29.0" />
+		<PackageReference Include="MailKit" Version="4.16.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.18.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Daleel.Domain\Daleel.Domain.csproj" />
+		<ProjectReference Include="..\Daleel.Services.Abstraction\Daleel.Services.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>
